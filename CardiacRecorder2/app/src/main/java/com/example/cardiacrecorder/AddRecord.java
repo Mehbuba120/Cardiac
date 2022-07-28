@@ -97,12 +97,12 @@ public class AddRecord extends AppCompatActivity {
 
         String s1 = sysEd.getText().toString();
         int n1 = Integer.parseInt(s1);
-        if(n1<0)
+        if(n1<70)
         {
             sysEd.setError("Invalid data input");
             return false;
         }
-        else if(n1>200)
+        else if(n1>150)
         {
             sysEd.setError("Invalid data input");
             return false;
@@ -115,14 +115,14 @@ public class AddRecord extends AppCompatActivity {
 
         String s2 = diaEd.getText().toString();
         int n2 = Integer.parseInt(s2);
-        if(n2<0)
+        if(n2<50)
         {
 
                 diaEd.setError("Invalid data input");
                 return false;
 
         }
-        else if(n2>120)
+        else if(n2>95)
         {
             diaEd.setError("Invalid data input");
             return false;
@@ -136,12 +136,12 @@ public class AddRecord extends AppCompatActivity {
         String s3 = hrEd.getText().toString();
         int n3 = Integer.parseInt(s3);
 
-        if(n3<0)
+        if(n3<75)
         {
             hrEd.setError("Invalid data input");
             return false;
         }
-        if(n3>190)
+        if(n3>170)
         {
             hrEd.setError("Invalid data input");
             return false;
